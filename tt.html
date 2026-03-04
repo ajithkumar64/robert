@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Robert Vishal | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    border: 6px solid #ff7a18;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    font-size: 3.2rem;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e3c72;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7a18;
+    background: rgba(255,122,24,0.1);
+}
+
+/* SECTIONS */
+section {
+    background: rgba(255,255,255,0.95);
+    padding: 35px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e3c72;
+    border-bottom: 3px solid #ff7a18;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ABOUT ME */
+#about p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* TECHNICAL SKILLS LIST */
+#tech-skills ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #1e3c72;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateX(10px);
+}
+
+.project-card h3 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+/* CERTIFICATES */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.certificate-card img:hover {
+    transform: scale(1.05);
+}
+
+.certificates-grid + p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* CAREER OBJECTIVE */
+#objective p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* CONTACT */
+.contact p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <!-- PROFILE IMAGE POSITIONED ABOVE NAME -->
+    <img src="rs.jpg" alt="robertvishal" class="profile-img">
+    
+    <h1>Robert Vishal</h1>
+    <p class="subtitle">B.Sc. Computer Science Student</p>
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#tech-skills">Technical Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#objective">Career Objective</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am <strong>Robert Vishal</strong>, a passionate <strong>B.Sc. Computer Science</strong> student
+        with strong interest in software development and modern technologies.
+        I enjoy learning new programming concepts and applying them through real-world projects.
+    </p>
+    <p>
+        My focus areas include <strong>Web Development</strong>, <strong>Python Programming</strong>,
+        and <strong>Cloud & IoT technologies</strong>.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>B.Sc. Computer Science</strong></p>
+    <p>St. Joseph's College (Autonomous), Tiruchirappalli</p>
+    <p>Currently Pursuing</p>
+</section>
+
+<section id="skills">
+    <h2>Programming Languages</h2>
+    <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Python</div>
+    </div>
+</section>
+
+<section id="tech-skills">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Front-End Web Development (HTML, CSS)</li>
+        <li>Basic Java Programming</li>
+        <li>Python Programming</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Problem Solving & Logical Thinking</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Designed and developed a responsive portfolio website using HTML and CSS
+                to showcase education, skills, projects, and certifications.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Python Mini Projects</h3>
+            <p>
+                Created multiple Python programs including calculators, data processing scripts,
+                and basic automation tools.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+        <div class="certificate-card">
+            <img src="24ucs664_page-0001.jpg" alt="College Certificate" />
+        </div>
+        <div class="certificate-card">
+            <img src="Foundation of Cloud IoT Edge ML_page-0001.jpg" alt="NPTEL Certificate" />
+        </div>
+        <div class="certificate-card">
+            <img src="WhatsApp Image 2025-12-27 at 23.27.13_6657f340.jpg" alt="Python Certificate" />
+        </div>
+    </div>
+    <p>
+        Completed certifications through <strong>NPTEL</strong>, <strong>LetsUpgrade</strong>,
+        and college-level workshops focusing on Python, Cloud IoT, and modern computing technologies.
+    </p>
+</section>
+
+<section id="objective">
+    <h2>Career Objective</h2>
+    <p>
+        To secure an entry-level position in the field of Computer Science where I can
+        apply my technical skills, learn continuously, and contribute to the growth
+        of the organization.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <strong>robertvishal@email.com</strong></p>
+    <p>📱 Phone: <strong>+91-9994660857</strong></p>
+    <p>📍 Location: Tiruchirappalli, Tamil Nadu</p>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Robert Vishal | Portfolio</p>
+</footer>
+</body>
+</html>
